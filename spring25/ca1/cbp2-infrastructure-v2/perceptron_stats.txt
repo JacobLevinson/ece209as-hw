@@ -1,0 +1,1800 @@
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1391580
+Weak Predictions (|output| <= threshold): 1042116
+Strong Correct Predictions: 13723016
+Strong Wrong Predictions: 349464
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1143553
+Weak Predictions (|output| <= threshold): 877386
+Strong Correct Predictions: 11683668
+Strong Wrong Predictions: 266167
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 745976
+Weak Predictions (|output| <= threshold): 667595
+Strong Correct Predictions: 16337266
+Strong Wrong Predictions: 78381
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 1374440
+Weak Predictions (|output| <= threshold): 1040915
+Strong Correct Predictions: 20325980
+Strong Wrong Predictions: 333525
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 429472
+Weak Predictions (|output| <= threshold): 364100
+Strong Correct Predictions: 8497560
+Strong Wrong Predictions: 65372
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 952393
+Weak Predictions (|output| <= threshold): 810434
+Strong Correct Predictions: 13238353
+Strong Wrong Predictions: 141959
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 860609
+Weak Predictions (|output| <= threshold): 670876
+Strong Correct Predictions: 10904276
+Strong Wrong Predictions: 189733
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 99478
+Weak Predictions (|output| <= threshold): 92758
+Strong Correct Predictions: 14054577
+Strong Wrong Predictions: 6720
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 148696
+Weak Predictions (|output| <= threshold): 138276
+Strong Correct Predictions: 12053168
+Strong Wrong Predictions: 10420
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 343236
+Weak Predictions (|output| <= threshold): 272077
+Strong Correct Predictions: 12848534
+Strong Wrong Predictions: 71159
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 211804
+Weak Predictions (|output| <= threshold): 183786
+Strong Correct Predictions: 12774789
+Strong Wrong Predictions: 28018
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 202346
+Weak Predictions (|output| <= threshold): 173954
+Strong Correct Predictions: 12818859
+Strong Wrong Predictions: 28392
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 146808
+Weak Predictions (|output| <= threshold): 131842
+Strong Correct Predictions: 12365877
+Strong Wrong Predictions: 14966
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 142003
+Weak Predictions (|output| <= threshold): 128705
+Strong Correct Predictions: 11784268
+Strong Wrong Predictions: 13298
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 93048
+Weak Predictions (|output| <= threshold): 83445
+Strong Correct Predictions: 7631912
+Strong Wrong Predictions: 9603
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 43294
+Weak Predictions (|output| <= threshold): 38023
+Strong Correct Predictions: 13493824
+Strong Wrong Predictions: 5271
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 314142
+Weak Predictions (|output| <= threshold): 258909
+Strong Correct Predictions: 13523899
+Strong Wrong Predictions: 55233
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 40638
+Weak Predictions (|output| <= threshold): 37849
+Strong Correct Predictions: 11033123
+Strong Wrong Predictions: 2789
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 8643
+Weak Predictions (|output| <= threshold): 8094
+Strong Correct Predictions: 24577633
+Strong Wrong Predictions: 549
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 1741548
+Weak Predictions (|output| <= threshold): 1365123
+Strong Correct Predictions: 11357345
+Strong Wrong Predictions: 376425
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1985974
+Weak Predictions (|output| <= threshold): 1447199
+Strong Correct Predictions: 13128622
+Strong Wrong Predictions: 538775
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1801750
+Weak Predictions (|output| <= threshold): 1340032
+Strong Correct Predictions: 11025471
+Strong Wrong Predictions: 461718
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1211852
+Weak Predictions (|output| <= threshold): 1048808
+Strong Correct Predictions: 15871390
+Strong Wrong Predictions: 163044
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2323797
+Weak Predictions (|output| <= threshold): 1678177
+Strong Correct Predictions: 19376623
+Strong Wrong Predictions: 645620
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 689384
+Weak Predictions (|output| <= threshold): 567457
+Strong Correct Predictions: 8237648
+Strong Wrong Predictions: 121927
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 1442993
+Weak Predictions (|output| <= threshold): 1184764
+Strong Correct Predictions: 12747753
+Strong Wrong Predictions: 258229
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 1241332
+Weak Predictions (|output| <= threshold): 934848
+Strong Correct Predictions: 10523553
+Strong Wrong Predictions: 306484
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 172023
+Weak Predictions (|output| <= threshold): 153094
+Strong Correct Predictions: 13982032
+Strong Wrong Predictions: 18929
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 269525
+Weak Predictions (|output| <= threshold): 240414
+Strong Correct Predictions: 11932339
+Strong Wrong Predictions: 29111
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 539049
+Weak Predictions (|output| <= threshold): 415684
+Strong Correct Predictions: 12652721
+Strong Wrong Predictions: 123365
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 328837
+Weak Predictions (|output| <= threshold): 273323
+Strong Correct Predictions: 12657756
+Strong Wrong Predictions: 55514
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 315026
+Weak Predictions (|output| <= threshold): 259120
+Strong Correct Predictions: 12706179
+Strong Wrong Predictions: 55906
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 271532
+Weak Predictions (|output| <= threshold): 233660
+Strong Correct Predictions: 12241153
+Strong Wrong Predictions: 37872
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 240958
+Weak Predictions (|output| <= threshold): 208622
+Strong Correct Predictions: 11685313
+Strong Wrong Predictions: 32336
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 169891
+Weak Predictions (|output| <= threshold): 148462
+Strong Correct Predictions: 7555069
+Strong Wrong Predictions: 21429
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 124385
+Weak Predictions (|output| <= threshold): 105309
+Strong Correct Predictions: 13412733
+Strong Wrong Predictions: 19076
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 494626
+Weak Predictions (|output| <= threshold): 391021
+Strong Correct Predictions: 13343415
+Strong Wrong Predictions: 103605
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 72780
+Weak Predictions (|output| <= threshold): 66545
+Strong Correct Predictions: 11000981
+Strong Wrong Predictions: 6235
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 14200
+Weak Predictions (|output| <= threshold): 12505
+Strong Correct Predictions: 24572076
+Strong Wrong Predictions: 1695
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 2630393
+Weak Predictions (|output| <= threshold): 2019668
+Strong Correct Predictions: 10468500
+Strong Wrong Predictions: 610725
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1985974
+Weak Predictions (|output| <= threshold): 1447199
+Strong Correct Predictions: 13128622
+Strong Wrong Predictions: 538775
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1801750
+Weak Predictions (|output| <= threshold): 1340032
+Strong Correct Predictions: 11025471
+Strong Wrong Predictions: 461718
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1211852
+Weak Predictions (|output| <= threshold): 1048808
+Strong Correct Predictions: 15871390
+Strong Wrong Predictions: 163044
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2323797
+Weak Predictions (|output| <= threshold): 1678177
+Strong Correct Predictions: 19376623
+Strong Wrong Predictions: 645620
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 689384
+Weak Predictions (|output| <= threshold): 567457
+Strong Correct Predictions: 8237648
+Strong Wrong Predictions: 121927
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 1442993
+Weak Predictions (|output| <= threshold): 1184764
+Strong Correct Predictions: 12747753
+Strong Wrong Predictions: 258229
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 1241332
+Weak Predictions (|output| <= threshold): 934848
+Strong Correct Predictions: 10523553
+Strong Wrong Predictions: 306484
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 172023
+Weak Predictions (|output| <= threshold): 153094
+Strong Correct Predictions: 13982032
+Strong Wrong Predictions: 18929
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 269525
+Weak Predictions (|output| <= threshold): 240414
+Strong Correct Predictions: 11932339
+Strong Wrong Predictions: 29111
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 539049
+Weak Predictions (|output| <= threshold): 415684
+Strong Correct Predictions: 12652721
+Strong Wrong Predictions: 123365
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 328837
+Weak Predictions (|output| <= threshold): 273323
+Strong Correct Predictions: 12657756
+Strong Wrong Predictions: 55514
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 315026
+Weak Predictions (|output| <= threshold): 259120
+Strong Correct Predictions: 12706179
+Strong Wrong Predictions: 55906
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 271532
+Weak Predictions (|output| <= threshold): 233660
+Strong Correct Predictions: 12241153
+Strong Wrong Predictions: 37872
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 240958
+Weak Predictions (|output| <= threshold): 208622
+Strong Correct Predictions: 11685313
+Strong Wrong Predictions: 32336
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 169891
+Weak Predictions (|output| <= threshold): 148462
+Strong Correct Predictions: 7555069
+Strong Wrong Predictions: 21429
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 124385
+Weak Predictions (|output| <= threshold): 105309
+Strong Correct Predictions: 13412733
+Strong Wrong Predictions: 19076
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 494626
+Weak Predictions (|output| <= threshold): 391021
+Strong Correct Predictions: 13343415
+Strong Wrong Predictions: 103605
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 72780
+Weak Predictions (|output| <= threshold): 66545
+Strong Correct Predictions: 11000981
+Strong Wrong Predictions: 6235
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 14200
+Weak Predictions (|output| <= threshold): 12505
+Strong Correct Predictions: 24572076
+Strong Wrong Predictions: 1695
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 2630393
+Weak Predictions (|output| <= threshold): 2019668
+Strong Correct Predictions: 10468500
+Strong Wrong Predictions: 610725
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1985974
+Weak Predictions (|output| <= threshold): 1447199
+Strong Correct Predictions: 13128622
+Strong Wrong Predictions: 538775
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1801750
+Weak Predictions (|output| <= threshold): 1340032
+Strong Correct Predictions: 11025471
+Strong Wrong Predictions: 461718
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1211852
+Weak Predictions (|output| <= threshold): 1048808
+Strong Correct Predictions: 15871390
+Strong Wrong Predictions: 163044
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2323797
+Weak Predictions (|output| <= threshold): 1678177
+Strong Correct Predictions: 19376623
+Strong Wrong Predictions: 645620
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 689384
+Weak Predictions (|output| <= threshold): 567457
+Strong Correct Predictions: 8237648
+Strong Wrong Predictions: 121927
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 1442993
+Weak Predictions (|output| <= threshold): 1184764
+Strong Correct Predictions: 12747753
+Strong Wrong Predictions: 258229
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 1241332
+Weak Predictions (|output| <= threshold): 934848
+Strong Correct Predictions: 10523553
+Strong Wrong Predictions: 306484
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 172023
+Weak Predictions (|output| <= threshold): 153094
+Strong Correct Predictions: 13982032
+Strong Wrong Predictions: 18929
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 269525
+Weak Predictions (|output| <= threshold): 240414
+Strong Correct Predictions: 11932339
+Strong Wrong Predictions: 29111
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 539049
+Weak Predictions (|output| <= threshold): 415684
+Strong Correct Predictions: 12652721
+Strong Wrong Predictions: 123365
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 328837
+Weak Predictions (|output| <= threshold): 273323
+Strong Correct Predictions: 12657756
+Strong Wrong Predictions: 55514
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 315026
+Weak Predictions (|output| <= threshold): 259120
+Strong Correct Predictions: 12706179
+Strong Wrong Predictions: 55906
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 271532
+Weak Predictions (|output| <= threshold): 233660
+Strong Correct Predictions: 12241153
+Strong Wrong Predictions: 37872
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 240958
+Weak Predictions (|output| <= threshold): 208622
+Strong Correct Predictions: 11685313
+Strong Wrong Predictions: 32336
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 169891
+Weak Predictions (|output| <= threshold): 148462
+Strong Correct Predictions: 7555069
+Strong Wrong Predictions: 21429
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 124385
+Weak Predictions (|output| <= threshold): 105309
+Strong Correct Predictions: 13412733
+Strong Wrong Predictions: 19076
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 494626
+Weak Predictions (|output| <= threshold): 391021
+Strong Correct Predictions: 13343415
+Strong Wrong Predictions: 103605
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 72780
+Weak Predictions (|output| <= threshold): 66545
+Strong Correct Predictions: 11000981
+Strong Wrong Predictions: 6235
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 14200
+Weak Predictions (|output| <= threshold): 12505
+Strong Correct Predictions: 24572076
+Strong Wrong Predictions: 1695
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 2630393
+Weak Predictions (|output| <= threshold): 2019668
+Strong Correct Predictions: 10468500
+Strong Wrong Predictions: 610725
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1985706
+Weak Predictions (|output| <= threshold): 1446990
+Strong Correct Predictions: 13128890
+Strong Wrong Predictions: 538716
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1802107
+Weak Predictions (|output| <= threshold): 1341014
+Strong Correct Predictions: 11025114
+Strong Wrong Predictions: 461093
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1210443
+Weak Predictions (|output| <= threshold): 1048022
+Strong Correct Predictions: 15872799
+Strong Wrong Predictions: 162421
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2326111
+Weak Predictions (|output| <= threshold): 1681305
+Strong Correct Predictions: 19374309
+Strong Wrong Predictions: 644806
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 689327
+Weak Predictions (|output| <= threshold): 567776
+Strong Correct Predictions: 8237705
+Strong Wrong Predictions: 121551
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 1438666
+Weak Predictions (|output| <= threshold): 1181837
+Strong Correct Predictions: 12752080
+Strong Wrong Predictions: 256829
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 1241602
+Weak Predictions (|output| <= threshold): 935264
+Strong Correct Predictions: 10523283
+Strong Wrong Predictions: 306338
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 173122
+Weak Predictions (|output| <= threshold): 154261
+Strong Correct Predictions: 13980933
+Strong Wrong Predictions: 18861
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 274609
+Weak Predictions (|output| <= threshold): 245065
+Strong Correct Predictions: 11927255
+Strong Wrong Predictions: 29544
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 539336
+Weak Predictions (|output| <= threshold): 416168
+Strong Correct Predictions: 12652434
+Strong Wrong Predictions: 123168
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 325233
+Weak Predictions (|output| <= threshold): 270027
+Strong Correct Predictions: 12661360
+Strong Wrong Predictions: 55206
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 311373
+Weak Predictions (|output| <= threshold): 255663
+Strong Correct Predictions: 12709832
+Strong Wrong Predictions: 55710
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 272657
+Weak Predictions (|output| <= threshold): 234683
+Strong Correct Predictions: 12240028
+Strong Wrong Predictions: 37974
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 242818
+Weak Predictions (|output| <= threshold): 210420
+Strong Correct Predictions: 11683453
+Strong Wrong Predictions: 32398
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 176336
+Weak Predictions (|output| <= threshold): 154803
+Strong Correct Predictions: 7548624
+Strong Wrong Predictions: 21533
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 124927
+Weak Predictions (|output| <= threshold): 105868
+Strong Correct Predictions: 13412191
+Strong Wrong Predictions: 19059
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 494578
+Weak Predictions (|output| <= threshold): 391087
+Strong Correct Predictions: 13343463
+Strong Wrong Predictions: 103491
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 73295
+Weak Predictions (|output| <= threshold): 67067
+Strong Correct Predictions: 11000466
+Strong Wrong Predictions: 6228
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 14301
+Weak Predictions (|output| <= threshold): 12618
+Strong Correct Predictions: 24571975
+Strong Wrong Predictions: 1683
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 2605438
+Weak Predictions (|output| <= threshold): 1994459
+Strong Correct Predictions: 10493455
+Strong Wrong Predictions: 610979
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1985974
+Weak Predictions (|output| <= threshold): 1447199
+Strong Correct Predictions: 13128622
+Strong Wrong Predictions: 538775
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1801750
+Weak Predictions (|output| <= threshold): 1340032
+Strong Correct Predictions: 11025471
+Strong Wrong Predictions: 461718
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1211852
+Weak Predictions (|output| <= threshold): 1048808
+Strong Correct Predictions: 15871390
+Strong Wrong Predictions: 163044
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2323797
+Weak Predictions (|output| <= threshold): 1678177
+Strong Correct Predictions: 19376623
+Strong Wrong Predictions: 645620
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 689384
+Weak Predictions (|output| <= threshold): 567457
+Strong Correct Predictions: 8237648
+Strong Wrong Predictions: 121927
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 1442993
+Weak Predictions (|output| <= threshold): 1184764
+Strong Correct Predictions: 12747753
+Strong Wrong Predictions: 258229
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 1241332
+Weak Predictions (|output| <= threshold): 934848
+Strong Correct Predictions: 10523553
+Strong Wrong Predictions: 306484
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 172023
+Weak Predictions (|output| <= threshold): 153094
+Strong Correct Predictions: 13982032
+Strong Wrong Predictions: 18929
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 269525
+Weak Predictions (|output| <= threshold): 240414
+Strong Correct Predictions: 11932339
+Strong Wrong Predictions: 29111
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 539049
+Weak Predictions (|output| <= threshold): 415684
+Strong Correct Predictions: 12652721
+Strong Wrong Predictions: 123365
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 328837
+Weak Predictions (|output| <= threshold): 273323
+Strong Correct Predictions: 12657756
+Strong Wrong Predictions: 55514
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 315026
+Weak Predictions (|output| <= threshold): 259120
+Strong Correct Predictions: 12706179
+Strong Wrong Predictions: 55906
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 271532
+Weak Predictions (|output| <= threshold): 233660
+Strong Correct Predictions: 12241153
+Strong Wrong Predictions: 37872
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 240958
+Weak Predictions (|output| <= threshold): 208622
+Strong Correct Predictions: 11685313
+Strong Wrong Predictions: 32336
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 169891
+Weak Predictions (|output| <= threshold): 148462
+Strong Correct Predictions: 7555069
+Strong Wrong Predictions: 21429
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 124385
+Weak Predictions (|output| <= threshold): 105309
+Strong Correct Predictions: 13412733
+Strong Wrong Predictions: 19076
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 494626
+Weak Predictions (|output| <= threshold): 391021
+Strong Correct Predictions: 13343415
+Strong Wrong Predictions: 103605
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 72780
+Weak Predictions (|output| <= threshold): 66545
+Strong Correct Predictions: 11000981
+Strong Wrong Predictions: 6235
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 14200
+Weak Predictions (|output| <= threshold): 12505
+Strong Correct Predictions: 24572076
+Strong Wrong Predictions: 1695
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 2630393
+Weak Predictions (|output| <= threshold): 2019668
+Strong Correct Predictions: 10468500
+Strong Wrong Predictions: 610725
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1941931
+Weak Predictions (|output| <= threshold): 1363941
+Strong Correct Predictions: 13172665
+Strong Wrong Predictions: 577990
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1739305
+Weak Predictions (|output| <= threshold): 1240759
+Strong Correct Predictions: 11087916
+Strong Wrong Predictions: 498546
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1088664
+Weak Predictions (|output| <= threshold): 913582
+Strong Correct Predictions: 15994578
+Strong Wrong Predictions: 175082
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2257792
+Weak Predictions (|output| <= threshold): 1580853
+Strong Correct Predictions: 19442628
+Strong Wrong Predictions: 676939
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 631386
+Weak Predictions (|output| <= threshold): 500591
+Strong Correct Predictions: 8295646
+Strong Wrong Predictions: 130795
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 1329964
+Weak Predictions (|output| <= threshold): 1051690
+Strong Correct Predictions: 12860782
+Strong Wrong Predictions: 278274
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 1187706
+Weak Predictions (|output| <= threshold): 854987
+Strong Correct Predictions: 10577179
+Strong Wrong Predictions: 332719
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 152599
+Weak Predictions (|output| <= threshold): 132497
+Strong Correct Predictions: 14001456
+Strong Wrong Predictions: 20102
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 233954
+Weak Predictions (|output| <= threshold): 202533
+Strong Correct Predictions: 11967910
+Strong Wrong Predictions: 31421
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 512675
+Weak Predictions (|output| <= threshold): 378624
+Strong Correct Predictions: 12679095
+Strong Wrong Predictions: 134051
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 280277
+Weak Predictions (|output| <= threshold): 219958
+Strong Correct Predictions: 12706316
+Strong Wrong Predictions: 60319
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 268014
+Weak Predictions (|output| <= threshold): 207121
+Strong Correct Predictions: 12753191
+Strong Wrong Predictions: 60893
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 240528
+Weak Predictions (|output| <= threshold): 199645
+Strong Correct Predictions: 12272157
+Strong Wrong Predictions: 40883
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 214236
+Weak Predictions (|output| <= threshold): 180031
+Strong Correct Predictions: 11712035
+Strong Wrong Predictions: 34205
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 137332
+Weak Predictions (|output| <= threshold): 115035
+Strong Correct Predictions: 7587628
+Strong Wrong Predictions: 22297
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 100869
+Weak Predictions (|output| <= threshold): 80811
+Strong Correct Predictions: 13436249
+Strong Wrong Predictions: 20058
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 429959
+Weak Predictions (|output| <= threshold): 320656
+Strong Correct Predictions: 13408082
+Strong Wrong Predictions: 109303
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 58444
+Weak Predictions (|output| <= threshold): 51764
+Strong Correct Predictions: 11015317
+Strong Wrong Predictions: 6680
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 12814
+Weak Predictions (|output| <= threshold): 11013
+Strong Correct Predictions: 24573462
+Strong Wrong Predictions: 1801
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 2508227
+Weak Predictions (|output| <= threshold): 1845208
+Strong Correct Predictions: 10590666
+Strong Wrong Predictions: 663019
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1985974
+Weak Predictions (|output| <= threshold): 1447199
+Strong Correct Predictions: 13128622
+Strong Wrong Predictions: 538775
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1801750
+Weak Predictions (|output| <= threshold): 1340032
+Strong Correct Predictions: 11025471
+Strong Wrong Predictions: 461718
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1211852
+Weak Predictions (|output| <= threshold): 1048808
+Strong Correct Predictions: 15871390
+Strong Wrong Predictions: 163044
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2323797
+Weak Predictions (|output| <= threshold): 1678177
+Strong Correct Predictions: 19376623
+Strong Wrong Predictions: 645620
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 689384
+Weak Predictions (|output| <= threshold): 567457
+Strong Correct Predictions: 8237648
+Strong Wrong Predictions: 121927
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 1442993
+Weak Predictions (|output| <= threshold): 1184764
+Strong Correct Predictions: 12747753
+Strong Wrong Predictions: 258229
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 1241332
+Weak Predictions (|output| <= threshold): 934848
+Strong Correct Predictions: 10523553
+Strong Wrong Predictions: 306484
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 172023
+Weak Predictions (|output| <= threshold): 153094
+Strong Correct Predictions: 13982032
+Strong Wrong Predictions: 18929
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 269525
+Weak Predictions (|output| <= threshold): 240414
+Strong Correct Predictions: 11932339
+Strong Wrong Predictions: 29111
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 539049
+Weak Predictions (|output| <= threshold): 415684
+Strong Correct Predictions: 12652721
+Strong Wrong Predictions: 123365
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 328837
+Weak Predictions (|output| <= threshold): 273323
+Strong Correct Predictions: 12657756
+Strong Wrong Predictions: 55514
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 315026
+Weak Predictions (|output| <= threshold): 259120
+Strong Correct Predictions: 12706179
+Strong Wrong Predictions: 55906
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 271532
+Weak Predictions (|output| <= threshold): 233660
+Strong Correct Predictions: 12241153
+Strong Wrong Predictions: 37872
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 240958
+Weak Predictions (|output| <= threshold): 208622
+Strong Correct Predictions: 11685313
+Strong Wrong Predictions: 32336
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 169891
+Weak Predictions (|output| <= threshold): 148462
+Strong Correct Predictions: 7555069
+Strong Wrong Predictions: 21429
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 124385
+Weak Predictions (|output| <= threshold): 105309
+Strong Correct Predictions: 13412733
+Strong Wrong Predictions: 19076
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 494626
+Weak Predictions (|output| <= threshold): 391021
+Strong Correct Predictions: 13343415
+Strong Wrong Predictions: 103605
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 72780
+Weak Predictions (|output| <= threshold): 66545
+Strong Correct Predictions: 11000981
+Strong Wrong Predictions: 6235
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 14200
+Weak Predictions (|output| <= threshold): 12505
+Strong Correct Predictions: 24572076
+Strong Wrong Predictions: 1695
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 2630393
+Weak Predictions (|output| <= threshold): 2019668
+Strong Correct Predictions: 10468500
+Strong Wrong Predictions: 610725
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1985974
+Weak Predictions (|output| <= threshold): 1447199
+Strong Correct Predictions: 13128622
+Strong Wrong Predictions: 538775
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1801750
+Weak Predictions (|output| <= threshold): 1340032
+Strong Correct Predictions: 11025471
+Strong Wrong Predictions: 461718
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1211852
+Weak Predictions (|output| <= threshold): 1048808
+Strong Correct Predictions: 15871390
+Strong Wrong Predictions: 163044
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2323797
+Weak Predictions (|output| <= threshold): 1678177
+Strong Correct Predictions: 19376623
+Strong Wrong Predictions: 645620
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 689384
+Weak Predictions (|output| <= threshold): 567457
+Strong Correct Predictions: 8237648
+Strong Wrong Predictions: 121927
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1973671
+Weak Predictions (|output| <= threshold): 1420845
+Strong Correct Predictions: 13140925
+Strong Wrong Predictions: 552826
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1790815
+Weak Predictions (|output| <= threshold): 1315958
+Strong Correct Predictions: 11036406
+Strong Wrong Predictions: 474857
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1194043
+Weak Predictions (|output| <= threshold): 1025957
+Strong Correct Predictions: 15889199
+Strong Wrong Predictions: 168086
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2320282
+Weak Predictions (|output| <= threshold): 1664938
+Strong Correct Predictions: 19380138
+Strong Wrong Predictions: 655344
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 682030
+Weak Predictions (|output| <= threshold): 555922
+Strong Correct Predictions: 8245002
+Strong Wrong Predictions: 126108
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 1421698
+Weak Predictions (|output| <= threshold): 1155928
+Strong Correct Predictions: 12769048
+Strong Wrong Predictions: 265770
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 1224681
+Weak Predictions (|output| <= threshold): 908751
+Strong Correct Predictions: 10540204
+Strong Wrong Predictions: 315930
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 162925
+Weak Predictions (|output| <= threshold): 144966
+Strong Correct Predictions: 13991130
+Strong Wrong Predictions: 17959
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 229596
+Weak Predictions (|output| <= threshold): 205211
+Strong Correct Predictions: 11972268
+Strong Wrong Predictions: 24385
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 531080
+Weak Predictions (|output| <= threshold): 404923
+Strong Correct Predictions: 12660690
+Strong Wrong Predictions: 126157
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 316284
+Weak Predictions (|output| <= threshold): 259395
+Strong Correct Predictions: 12670309
+Strong Wrong Predictions: 56889
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 302743
+Weak Predictions (|output| <= threshold): 245289
+Strong Correct Predictions: 12718462
+Strong Wrong Predictions: 57454
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 236286
+Weak Predictions (|output| <= threshold): 202566
+Strong Correct Predictions: 12276399
+Strong Wrong Predictions: 33720
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 228928
+Weak Predictions (|output| <= threshold): 196784
+Strong Correct Predictions: 11697343
+Strong Wrong Predictions: 32144
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 154995
+Weak Predictions (|output| <= threshold): 133772
+Strong Correct Predictions: 7569965
+Strong Wrong Predictions: 21223
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 91930
+Weak Predictions (|output| <= threshold): 75796
+Strong Correct Predictions: 13445188
+Strong Wrong Predictions: 16134
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 476591
+Weak Predictions (|output| <= threshold): 371914
+Strong Correct Predictions: 13361450
+Strong Wrong Predictions: 104677
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 60020
+Weak Predictions (|output| <= threshold): 53917
+Strong Correct Predictions: 11013741
+Strong Wrong Predictions: 6103
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 13859
+Weak Predictions (|output| <= threshold): 12199
+Strong Correct Predictions: 24572417
+Strong Wrong Predictions: 1660
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 2622373
+Weak Predictions (|output| <= threshold): 1992847
+Strong Correct Predictions: 10476520
+Strong Wrong Predictions: 629526
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1985974
+Weak Predictions (|output| <= threshold): 1447199
+Strong Correct Predictions: 13128622
+Strong Wrong Predictions: 538775
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1801750
+Weak Predictions (|output| <= threshold): 1340032
+Strong Correct Predictions: 11025471
+Strong Wrong Predictions: 461718
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1211852
+Weak Predictions (|output| <= threshold): 1048808
+Strong Correct Predictions: 15871390
+Strong Wrong Predictions: 163044
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2323797
+Weak Predictions (|output| <= threshold): 1678177
+Strong Correct Predictions: 19376623
+Strong Wrong Predictions: 645620
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 689384
+Weak Predictions (|output| <= threshold): 567457
+Strong Correct Predictions: 8237648
+Strong Wrong Predictions: 121927
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 1442993
+Weak Predictions (|output| <= threshold): 1184764
+Strong Correct Predictions: 12747753
+Strong Wrong Predictions: 258229
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 1241332
+Weak Predictions (|output| <= threshold): 934848
+Strong Correct Predictions: 10523553
+Strong Wrong Predictions: 306484
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 172023
+Weak Predictions (|output| <= threshold): 153094
+Strong Correct Predictions: 13982032
+Strong Wrong Predictions: 18929
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 269525
+Weak Predictions (|output| <= threshold): 240414
+Strong Correct Predictions: 11932339
+Strong Wrong Predictions: 29111
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 539049
+Weak Predictions (|output| <= threshold): 415684
+Strong Correct Predictions: 12652721
+Strong Wrong Predictions: 123365
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 328837
+Weak Predictions (|output| <= threshold): 273323
+Strong Correct Predictions: 12657756
+Strong Wrong Predictions: 55514
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 315026
+Weak Predictions (|output| <= threshold): 259120
+Strong Correct Predictions: 12706179
+Strong Wrong Predictions: 55906
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 271532
+Weak Predictions (|output| <= threshold): 233660
+Strong Correct Predictions: 12241153
+Strong Wrong Predictions: 37872
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 240958
+Weak Predictions (|output| <= threshold): 208622
+Strong Correct Predictions: 11685313
+Strong Wrong Predictions: 32336
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 169891
+Weak Predictions (|output| <= threshold): 148462
+Strong Correct Predictions: 7555069
+Strong Wrong Predictions: 21429
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 124385
+Weak Predictions (|output| <= threshold): 105309
+Strong Correct Predictions: 13412733
+Strong Wrong Predictions: 19076
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 494626
+Weak Predictions (|output| <= threshold): 391021
+Strong Correct Predictions: 13343415
+Strong Wrong Predictions: 103605
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 72780
+Weak Predictions (|output| <= threshold): 66545
+Strong Correct Predictions: 11000981
+Strong Wrong Predictions: 6235
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 14200
+Weak Predictions (|output| <= threshold): 12505
+Strong Correct Predictions: 24572076
+Strong Wrong Predictions: 1695
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 2630393
+Weak Predictions (|output| <= threshold): 2019668
+Strong Correct Predictions: 10468500
+Strong Wrong Predictions: 610725
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 15114596
+Total Updates (training events): 1986143
+Weak Predictions (|output| <= threshold): 1447280
+Strong Correct Predictions: 13128453
+Strong Wrong Predictions: 538863
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12827221
+Total Updates (training events): 1801679
+Weak Predictions (|output| <= threshold): 1339954
+Strong Correct Predictions: 11025542
+Strong Wrong Predictions: 461725
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 17083242
+Total Updates (training events): 1217813
+Weak Predictions (|output| <= threshold): 1052033
+Strong Correct Predictions: 15865429
+Strong Wrong Predictions: 165780
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 21700420
+Total Updates (training events): 2323824
+Weak Predictions (|output| <= threshold): 1678221
+Strong Correct Predictions: 19376596
+Strong Wrong Predictions: 645603
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 8927032
+Total Updates (training events): 690264
+Weak Predictions (|output| <= threshold): 568105
+Strong Correct Predictions: 8236768
+Strong Wrong Predictions: 122159
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14190746
+Total Updates (training events): 1447172
+Weak Predictions (|output| <= threshold): 1187242
+Strong Correct Predictions: 12743574
+Strong Wrong Predictions: 259930
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11764885
+Total Updates (training events): 1241499
+Weak Predictions (|output| <= threshold): 934995
+Strong Correct Predictions: 10523386
+Strong Wrong Predictions: 306504
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 14154055
+Total Updates (training events): 172388
+Weak Predictions (|output| <= threshold): 153303
+Strong Correct Predictions: 13981667
+Strong Wrong Predictions: 19085
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12201864
+Total Updates (training events): 269784
+Weak Predictions (|output| <= threshold): 240494
+Strong Correct Predictions: 11932080
+Strong Wrong Predictions: 29290
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13191770
+Total Updates (training events): 539246
+Weak Predictions (|output| <= threshold): 415825
+Strong Correct Predictions: 12652524
+Strong Wrong Predictions: 123421
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12986593
+Total Updates (training events): 329094
+Weak Predictions (|output| <= threshold): 273500
+Strong Correct Predictions: 12657499
+Strong Wrong Predictions: 55594
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13021205
+Total Updates (training events): 315336
+Weak Predictions (|output| <= threshold): 259417
+Strong Correct Predictions: 12705869
+Strong Wrong Predictions: 55919
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 12512685
+Total Updates (training events): 272495
+Weak Predictions (|output| <= threshold): 234394
+Strong Correct Predictions: 12240190
+Strong Wrong Predictions: 38101
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11926271
+Total Updates (training events): 241730
+Weak Predictions (|output| <= threshold): 209173
+Strong Correct Predictions: 11684541
+Strong Wrong Predictions: 32557
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 7724960
+Total Updates (training events): 169948
+Weak Predictions (|output| <= threshold): 148515
+Strong Correct Predictions: 7555012
+Strong Wrong Predictions: 21433
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13537118
+Total Updates (training events): 124681
+Weak Predictions (|output| <= threshold): 105593
+Strong Correct Predictions: 13412437
+Strong Wrong Predictions: 19088
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13838041
+Total Updates (training events): 495126
+Weak Predictions (|output| <= threshold): 391457
+Strong Correct Predictions: 13342915
+Strong Wrong Predictions: 103669
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 11073761
+Total Updates (training events): 73269
+Weak Predictions (|output| <= threshold): 66973
+Strong Correct Predictions: 11000492
+Strong Wrong Predictions: 6296
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 24586276
+Total Updates (training events): 14186
+Weak Predictions (|output| <= threshold): 12488
+Strong Correct Predictions: 24572090
+Strong Wrong Predictions: 1698
+========================================
+
+=== Perceptron Predictor Statistics ===
+Total Predictions: 13098893
+Total Updates (training events): 2630463
+Weak Predictions (|output| <= threshold): 2019715
+Strong Correct Predictions: 10468430
+Strong Wrong Predictions: 610748
+========================================
