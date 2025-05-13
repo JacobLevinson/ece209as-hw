@@ -62,6 +62,7 @@ static std::vector<inst_entry_t *> done_queue;
 static std::array<unsigned, 128> reg_status; // which tag will write each arch reg
 static unsigned free_k0, free_k1, free_k2;   // available FUs of each type
 
+static std::vector<unsigned> just_broadcast;
 //----------------------------------------------------------------------
 // Stage prototypes
 static void fetch_stage();
@@ -111,7 +112,7 @@ void run_proc(proc_stats_t *p_stats)
         {
                 ++current_cycle;
                 p_stats->cycle_count = current_cycle;
-
+                just_broadcast.clear();
                 // 5) retire & free buses
                 state_update_stage();
 
@@ -266,17 +267,21 @@ static void execute_stage()
         //  * have not yet been issued (when[S_EXECUTE]==0),
         //  * and whose operands are ready.
         std::vector<inst_entry_t *> cand;
-        for (auto *e : scheduling_queue)
-        {
-                if (e->when[S_EXECUTE] == 0 && e->src_ready[0] && e->src_ready[1])
-                {
-                        cand.push_back(e);
+        for (auto *e : scheduling_queue) {
+                if (e->when[S_EXECUTE]==0 && e->src_ready[0] && e->src_ready[1]) {
+                  // check that neither src_tag is in just_broadcast
+                  bool blocked = false;
+                  for (unsigned t : just_broadcast)
+                    if (e->src_tag[0]==t || e->src_tag[1]==t) {
+                      blocked = true;
+                      break;
+                    }
+                  if (!blocked) cand.push_back(e);
                 }
-        }
+              }
         // Sort by tag to enforce in-order fire
         std::sort(cand.begin(), cand.end(),
-                  [](inst_entry_t *a, inst_entry_t *b)
-                  { return a->tag < b->tag; });
+        [](inst_entry_t *a, inst_entry_t *b) { return a->tag < b->tag; });
 
         // Try to fire each in tag order, up to FU availability
         for (auto *e : cand)
@@ -304,6 +309,7 @@ static void execute_stage()
         }
 
         // --- (2) Advance all in-flight executions ---
+        std::vector<inst_entry_t *> just_finished;
         for (auto *e : scheduling_queue)
         {
                 if (e->remaining_lat > 0)
@@ -311,10 +317,20 @@ static void execute_stage()
                         e->remaining_lat--;
                         if (e->remaining_lat == 0)
                         {
-                                // it just finished—push to done_queue for retire next stage
-                                done_queue.push_back(e);
+                                just_finished.push_back(e);
                         }
                 }
+        }
+
+        // Tie‐break same‐cycle completions by tag
+        std::sort(just_finished.begin(), just_finished.end(),
+                  [](inst_entry_t *a, inst_entry_t *b)
+                  { return a->tag < b->tag; });
+
+        // Enqueue into done_queue in that order
+        for (auto *e : just_finished)
+        {
+                done_queue.push_back(e);
         }
 }
 
@@ -324,10 +340,6 @@ static void state_update_stage()
                 return;
 
         // retire in tag order
-        std::sort(done_queue.begin(), done_queue.end(),
-                  [](inst_entry_t *a, inst_entry_t *b)
-                  { return a->tag < b->tag; });
-
         unsigned num = std::min<unsigned>(done_queue.size(), R);
         for (unsigned i = 0; i < num; ++i)
         {
@@ -335,6 +347,9 @@ static void state_update_stage()
 
                 // record state‐update
                 e->when[S_STATE_UPDATE] = current_cycle;
+
+                // Cant execute on this same cycle
+                just_broadcast.push_back(e->tag);
 
                 // Count this as retired
                 total_retired++;
