@@ -133,21 +133,28 @@ static void dispatch_stage()
         // 1) Move last cycle’s fetches into the infinite dispatch queue
         for (auto *ent : fetch_buf)
         {
+                // DISP: entering the dispatch queue in this cycle
+                ent->when[S_DISPATCH] = current_cycle;
                 dispatch_q.push(ent);
         }
         fetch_buf.clear();
 
-        // 2) Now push from dispatch_q → sched_q up to capacity
+        // (we leave the RS insertion to schedule_stage())
+}
+
+static void schedule_stage()
+{
+        // 1) Drain dispatch_q → sched_q up to capacity (this is SCHED)
         const size_t cap = 2 * (K0 + K1 + K2);
         while (!dispatch_q.empty() && sched_q.size() < cap)
         {
                 inst_entry_t *ent = dispatch_q.front();
                 dispatch_q.pop();
 
-                // record the dispatch cycle (entering the reservation station)
-                ent->when[S_DISPATCH] = current_cycle;
+                // SCHED: entering the reservation station
+                ent->when[S_SCHEDULE] = current_cycle;
 
-                // resolve src readiness exactly as before…
+                // resolve source operands
                 for (int s = 0; s < 2; ++s)
                 {
                         int32_t src = ent->inst.src_reg[s];
@@ -162,6 +169,8 @@ static void dispatch_stage()
                                 ent->src_tag[s] = reg_status[src];
                         }
                 }
+
+                // set up for future write-back
                 if (ent->inst.dest_reg >= 0)
                 {
                         reg_status[ent->inst.dest_reg] = ent->tag;
@@ -169,32 +178,29 @@ static void dispatch_stage()
 
                 sched_q.push_back(ent);
         }
-}
 
-static void schedule_stage()
-{
-
-        // 1) collect all candidates (ready & not yet scheduled)
+        // 2) Collect all ready & never-yet-executed entries
         std::vector<inst_entry_t *> candidates;
         for (auto ent : sched_q)
         {
-                if (ent->remaining_lat == 0 && ent->src_ready[0] && ent->src_ready[1] && ent->when[S_SCHEDULE] == 0) // only issue once
+                if (ent->remaining_lat == 0 && ent->src_ready[0] && ent->src_ready[1] && ent->when[S_EXECUTE] == 0) // not yet issued
                 {
                         candidates.push_back(ent);
                 }
         }
 
-        // 2) sort by tag ascending
+        // 3) Issue in tag order
         std::sort(candidates.begin(), candidates.end(),
                   [](inst_entry_t *a, inst_entry_t *b)
                   {
                           return a->tag < b->tag;
                   });
 
-        // 3) try to issue each in tag order
         for (auto ent : candidates)
         {
                 unsigned opc = ent->inst.op_code;
+                if (opc < 0)
+                        opc = 1; // default to k1
                 unsigned *free_fu =
                     (opc == 0   ? &free_k0
                      : opc == 1 ? &free_k1
@@ -204,15 +210,15 @@ static void schedule_stage()
                 {
                         (*free_fu)--;
 
-                        // record schedule & execution start (first and only time)
-                        ent->when[S_SCHEDULE] = current_cycle;
-                        sum_inst_fired++; // for stats
+                        // EXEC: execution begins
+                        ent->when[S_EXECUTE] = current_cycle;
+                        sum_inst_fired++;
 
+                        // set execution latency
                         unsigned lat = (opc == 0   ? LAT0
                                         : opc == 1 ? LAT1
                                                    : LAT2);
                         ent->remaining_lat = lat;
-                        ent->when[S_EXECUTE] = current_cycle + 1;
                 }
         }
 }
@@ -229,14 +235,6 @@ static void execute_stage()
                         ent->remaining_lat--;
                         if (ent->remaining_lat == 0)
                         {
-                                // execution just finished: free its FU
-                                unsigned opc = ent->inst.op_code;
-                                if (opc == 0)
-                                        free_k0++;
-                                else if (opc == 1)
-                                        free_k1++;
-                                else
-                                        free_k2++;
 
                                 // retire next cycle, so queue it now
                                 done_q.push_back(ent);
@@ -265,10 +263,21 @@ static void state_update_stage()
                 inst_entry_t *ent = done_q[i];
 
                 // record state-update (retire) cycle
-                ent->when[S_STATE_UPDATE] = current_cycle;
+                ent->when[S_STATE_UPDATE] = current_cycle + 1;
 
                 // count it
                 total_retired++;
+
+                // Free its FU
+                unsigned opc = ent->inst.op_code;
+                if (opc < 0)
+                        opc = 1;
+                if (opc == 0)
+                        free_k0++;
+                else if (opc == 1)
+                        free_k1++;
+                else
+                        free_k2++;
 
                 // write-back: clear reg_status if still pointing to this tag
                 int32_t dest = ent->inst.dest_reg;
@@ -345,11 +354,11 @@ void run_proc(proc_stats_t *p_stats)
                                 free_k0, free_k1, free_k2);
                 }
 
+                // Finish any in-flight executions
+                execute_stage();
+
                 // Second-half of the cycle: retire and free resources
                 state_update_stage();
-
-                // Then finish any in-flight executions
-                execute_stage();
 
                 // First-half of this cycle: issue ready ops
                 schedule_stage();
