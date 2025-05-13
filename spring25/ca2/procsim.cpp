@@ -2,6 +2,7 @@
 #include <queue>
 #include <vector>
 #include <array>
+#include <algorithm>
 
 static void fetch_stage();
 static void dispatch_stage();
@@ -51,8 +52,23 @@ static std::vector<inst_entry_t *> sched_q;
 // Register status: for each architectural reg, which tag will write it, or 0 if free
 static std::array<unsigned, 128> reg_status;
 
+// Completed-execution queue
+static std::vector<inst_entry_t *> done_q;
+
+// temporarily holds freshly fetched entries until next cycle’s dispatch
+static std::vector<inst_entry_t *> fetch_buf;
+
 // Functional‐unit availability counters
 static unsigned free_k0, free_k1, free_k2;
+
+static const unsigned LAT0 = 1;
+static const unsigned LAT1 = 1;
+static const unsigned LAT2 = 1;
+
+static unsigned long sum_disp_size = 0;
+static unsigned long max_disp_size = 0;
+static unsigned long sum_inst_fired = 0;
+static unsigned long total_retired = 0;
 
 /**
  * Subroutine for initializing the processor. You many add and initialize any global or heap
@@ -88,79 +104,199 @@ static void fetch_stage()
 {
         if (!more_to_fetch)
                 return;
+
         for (uint64_t i = 0; i < F; ++i)
         {
                 proc_inst_t base;
                 if (!read_instruction(&base))
                 {
-                        // no more in the trace
                         more_to_fetch = false;
                         break;
                 }
-                // allocate a new entry
-                inst_entry_t *ent = new inst_entry_t();
+                auto *ent = new inst_entry_t();
                 all_entries.push_back(ent);
+
                 ent->inst = base;
                 ent->tag = next_tag++;
-                // dependencies will be resolved in dispatch
                 ent->src_ready[0] = ent->src_ready[1] = false;
                 ent->src_tag[0] = ent->src_tag[1] = 0;
                 ent->remaining_lat = 0;
-                // push into the dispatch queue
-                dispatch_q.push(ent);
                 ent->when[S_FETCH] = current_cycle;
+
+                // *Don't* dispatch it immediately—hold it here
+                fetch_buf.push_back(ent);
         }
 }
 
 static void dispatch_stage()
 {
-        // capacity of the reservation station
-        const size_t cap = 2 * (K0 + K1 + K2);
+        // 1) Move last cycle’s fetches into the infinite dispatch queue
+        for (auto *ent : fetch_buf)
+        {
+                dispatch_q.push(ent);
+        }
+        fetch_buf.clear();
 
-        // pull as many as will fit
+        // 2) Now push from dispatch_q → sched_q up to capacity
+        const size_t cap = 2 * (K0 + K1 + K2);
         while (!dispatch_q.empty() && sched_q.size() < cap)
         {
                 inst_entry_t *ent = dispatch_q.front();
                 dispatch_q.pop();
 
-                // record dispatch cycle if you track it:
-                // ent->when[S_DISPATCH] = current_cycle;
+                // record the dispatch cycle (entering the reservation station)
+                ent->when[S_DISPATCH] = current_cycle;
 
-                // for each source operand
+                // resolve src readiness exactly as before…
                 for (int s = 0; s < 2; ++s)
                 {
                         int32_t src = ent->inst.src_reg[s];
-                        if (src < 0)
+                        if (src < 0 || reg_status[src] == 0)
                         {
-                                // no source
-                                ent->src_ready[s] = true;
-                                ent->src_tag[s] = 0;
-                        }
-                        else if (reg_status[src] == 0)
-                        {
-                                // register free
                                 ent->src_ready[s] = true;
                                 ent->src_tag[s] = 0;
                         }
                         else
                         {
-                                // waiting on a producer
                                 ent->src_ready[s] = false;
                                 ent->src_tag[s] = reg_status[src];
                         }
                 }
-
-                // if this writes a destination, record that this tag will produce it
-                int32_t dest = ent->inst.dest_reg;
-                if (dest >= 0)
+                if (ent->inst.dest_reg >= 0)
                 {
-                        reg_status[dest] = ent->tag;
+                        reg_status[ent->inst.dest_reg] = ent->tag;
                 }
 
-                // enter the scheduling queue
                 sched_q.push_back(ent);
-                ent->when[S_DISPATCH] = current_cycle;
         }
+}
+
+static void schedule_stage()
+{
+
+        // 1) collect all candidates (ready & not yet scheduled)
+        std::vector<inst_entry_t *> candidates;
+        for (auto ent : sched_q)
+        {
+                if (ent->remaining_lat == 0 && ent->src_ready[0] && ent->src_ready[1] && ent->when[S_SCHEDULE] == 0) // only issue once
+                {
+                        candidates.push_back(ent);
+                }
+        }
+
+        // 2) sort by tag ascending
+        std::sort(candidates.begin(), candidates.end(),
+                  [](inst_entry_t *a, inst_entry_t *b)
+                  {
+                          return a->tag < b->tag;
+                  });
+
+        // 3) try to issue each in tag order
+        for (auto ent : candidates)
+        {
+                unsigned opc = ent->inst.op_code;
+                unsigned *free_fu =
+                    (opc == 0   ? &free_k0
+                     : opc == 1 ? &free_k1
+                                : &free_k2);
+
+                if (*free_fu > 0)
+                {
+                        (*free_fu)--;
+
+                        // record schedule & execution start (first and only time)
+                        ent->when[S_SCHEDULE] = current_cycle;
+                        sum_inst_fired++; // for stats
+
+                        unsigned lat = (opc == 0   ? LAT0
+                                        : opc == 1 ? LAT1
+                                                   : LAT2);
+                        ent->remaining_lat = lat;
+                        ent->when[S_EXECUTE] = current_cycle + 1;
+                }
+        }
+}
+
+/// Execute stage: decrement latency and collect finished entries
+/// Execute stage: decrement latency, collect finished entries, free FUs immediately
+static void execute_stage()
+{
+        for (auto it = sched_q.begin(); it != sched_q.end(); /* nothing */)
+        {
+                inst_entry_t *ent = *it;
+                if (ent->remaining_lat > 0)
+                {
+                        ent->remaining_lat--;
+                        if (ent->remaining_lat == 0)
+                        {
+                                // execution just finished: free its FU
+                                unsigned opc = ent->inst.op_code;
+                                if (opc == 0)
+                                        free_k0++;
+                                else if (opc == 1)
+                                        free_k1++;
+                                else
+                                        free_k2++;
+
+                                // retire next cycle, so queue it now
+                                done_q.push_back(ent);
+                        }
+                }
+                ++it;
+        }
+}
+
+/// State-update (retire) stage: retire up to R instructions in tag order
+static void state_update_stage()
+{
+        if (done_q.empty())
+                return;
+
+        // retire in tag order
+        std::sort(done_q.begin(), done_q.end(),
+                  [](inst_entry_t *a, inst_entry_t *b)
+                  {
+                          return a->tag < b->tag;
+                  });
+
+        unsigned to_retire = std::min<unsigned>(done_q.size(), R);
+        for (unsigned i = 0; i < to_retire; ++i)
+        {
+                inst_entry_t *ent = done_q[i];
+
+                // record state-update (retire) cycle
+                ent->when[S_STATE_UPDATE] = current_cycle;
+
+                // count it
+                total_retired++;
+
+                // write-back: clear reg_status if still pointing to this tag
+                int32_t dest = ent->inst.dest_reg;
+                if (dest >= 0 && reg_status[dest] == ent->tag)
+                {
+                        reg_status[dest] = 0;
+                }
+
+                // broadcast result to reservation stations
+                for (auto other : sched_q)
+                {
+                        for (int s = 0; s < 2; ++s)
+                        {
+                                if (!other->src_ready[s] && other->src_tag[s] == ent->tag)
+                                {
+                                        other->src_ready[s] = true;
+                                }
+                        }
+                }
+
+                // remove from scheduling queue
+                auto it = std::find(sched_q.begin(), sched_q.end(), ent);
+                if (it != sched_q.end())
+                        sched_q.erase(it);
+        }
+
+        // erase the retired entries from done_q
+        done_q.erase(done_q.begin(), done_q.begin() + to_retire);
 }
 
 /**
@@ -172,24 +308,63 @@ static void dispatch_stage()
  */
 void run_proc(proc_stats_t *p_stats)
 {
-        // keep looping while we can still fetch, or have work in-flight
-        while (more_to_fetch || !dispatch_q.empty() || !sched_q.empty()
-               /* later: || any executing instructions */)
-        {
-                // second-half retirement happens first
-                // state_update_stage();
-                // complete any in-flight executes
-                // execute_stage();
-                // issue from reservation stations
-                // schedule_stage();
-                // move from dispatch→schedule
-                // dispatch_stage();
-                // bring in new ops from trace
-                fetch_stage();
+        current_cycle = 0;
 
-                // track dispatch-queue occupancy for stats here if you like
+        // Loop until there’s nothing left to fetch, dispatch, schedule, or retire
+        while (more_to_fetch || !dispatch_q.empty() || !sched_q.empty() || !done_q.empty())
+        {
+                // Start a new cycle
                 current_cycle++;
                 p_stats->cycle_count = current_cycle;
+
+                // ==== DEBUG TRACE for first few cycles ====
+                if (current_cycle <= 8)
+                {
+                        // print to stderr so it doesn’t mix with your .output
+                        fprintf(stderr, "=== Cycle %u ===\n", current_cycle);
+                        fprintf(stderr, " fetch_buf: ");
+                        for (auto *e : fetch_buf)
+                                fprintf(stderr, "%u ", e->tag);
+                        fprintf(stderr, "\n dispatch_q: ");
+                        {
+                                // peek without popping
+                                std::queue<inst_entry_t *> tmp = dispatch_q;
+                                while (!tmp.empty())
+                                {
+                                        fprintf(stderr, "%u ", tmp.front()->tag);
+                                        tmp.pop();
+                                }
+                        }
+                        fprintf(stderr, "\n sched_q: ");
+                        for (auto *e : sched_q)
+                                fprintf(stderr, "%u ", e->tag);
+                        fprintf(stderr, "\n done_q:  ");
+                        for (auto *e : done_q)
+                                fprintf(stderr, "%u ", e->tag);
+                        fprintf(stderr, "\n free_k0=%u, k1=%u, k2=%u\n\n",
+                                free_k0, free_k1, free_k2);
+                }
+
+                // Second-half of the cycle: retire and free resources
+                state_update_stage();
+
+                // Then finish any in-flight executions
+                execute_stage();
+
+                // First-half of this cycle: issue ready ops
+                schedule_stage();
+
+                // Second-half: move from dispatch→schedule
+                dispatch_stage();
+
+                // Track dispatch-queue stats
+                unsigned dq_sz = dispatch_q.size();
+                sum_disp_size += dq_sz;
+                if (dq_sz > max_disp_size)
+                        max_disp_size = dq_sz;
+
+                // Finally, fetch up to F new ops
+                fetch_stage();
         }
 }
 
@@ -200,8 +375,15 @@ void run_proc(proc_stats_t *p_stats)
  *
  * @p_stats Pointer to the statistics structure
  */
-void complete_proc(proc_stats_t *p_stats) 
+void complete_proc(proc_stats_t *p_stats)
 {
+        p_stats->retired_instruction = total_retired;
+        p_stats->max_disp_size = max_disp_size;
+        p_stats->avg_disp_size = (double)sum_disp_size / p_stats->cycle_count;
+        p_stats->avg_inst_fired = (double)sum_inst_fired / p_stats->cycle_count;
+        p_stats->avg_inst_retired = (double)total_retired / p_stats->cycle_count;
+
+        // now print your per‐inst log
         printf("INST\tFETCH\tDISP\tSCHED\tEXEC\tSTATE\n");
         for (auto ent : all_entries)
         {
@@ -212,6 +394,6 @@ void complete_proc(proc_stats_t *p_stats)
                        ent->when[S_SCHEDULE],
                        ent->when[S_EXECUTE],
                        ent->when[S_STATE_UPDATE]);
-                delete ent; // clean up
+                delete ent;
         }
 }
